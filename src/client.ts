@@ -10,7 +10,7 @@ const client = new Client({
 });
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client?.user?.tag ?? 'hi'}!`);
+  console.log(`Logged in as ${client?.user?.tag ?? 'hi please work'}!`);
 });
 
 client.login(env.DISCORD_TOKEN);
