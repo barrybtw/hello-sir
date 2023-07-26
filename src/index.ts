@@ -1,3 +1,5 @@
+import 'dotenv/config';
+console.log(process.env);
 import { commands as _commands } from './commands.js';
 
 import { getClient } from './client.js';
