@@ -24,7 +24,6 @@ client.on('messageCreate', async (message) => {
   const match = content.match(regex);
 
   if (match) {
-    message.delete();
     await message.reply({
       embeds: [
         {
@@ -40,5 +39,6 @@ client.on('messageCreate', async (message) => {
         flags: MessageFlags.Ephemeral,
       },
     });
+    await message.delete();
   }
 });
