@@ -1,6 +1,6 @@
-import { commands as _commands } from '@/commands.js';
+import { commands as _commands } from './commands.js';
 
-import { getClient } from '@/client.js';
+import { getClient } from './client.js';
 
 const client = getClient();
 
